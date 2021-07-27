@@ -107,7 +107,7 @@ public class MyPrinterService {
                 printerJob.setPrintService(printService);
             }
             //设置纸张以及缩放
-            PDFPrintable pdfPrintable = new PDFPrintable(document, Scaling.ACTUAL_SIZE);
+            PDFPrintable pdfPrintable = new PDFPrintable(document, Scaling.SCALE_TO_FIT);
             // 设置多页打印
             Book book = new Book();
             PageFormat pageFormat = new PageFormat();
